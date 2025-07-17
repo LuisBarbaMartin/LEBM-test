@@ -1,0 +1,63 @@
+ <img class="logo" src="https://www.saintleo.edu/themes/custom/saintleo/images/logo-horizontal.svg" alt="SLU Logo" width="240">
+    <h2 class="page-title">Final Term Estimator</h2>
+    <div class="app-container">
+        <form id="graduationEstimatorForm">
+            <label class="var-title" for="currentTerm">Current Term:</label>
+            <select id="currentTerm" name="currentTerm">
+                <option value="Spring 1">Spring 1</option>
+                <option value="Spring 2">Spring 2</option>
+                <option value="Summer 1">Summer 1</option>
+                <option value="Summer 2">Summer 2</option>
+                <option value="Fall 1">Fall 1</option>
+                <option value="Fall 2">Fall 2</option>
+            </select>
+            <br>
+
+            <label class="var-title" for="currentYear">Current Year:</label>
+            <input type="number" id="currentYear" name="currentYear" required>
+            <br>
+
+            <label class="var-title" for="creditsRemaining">Credits Remaining:</label>
+            <input type="number" id="creditsRemaining" name="creditsRemaining" required>
+            <br>
+
+            <div class="radio-group-container">
+                <div class="radio-group">
+                    <div class="radio-label">What Degree Level?:</div>
+                    <div class="radio-options">
+                        <label><input type="radio" name="degreeLevel" value="Associates">Associates</label>
+                        <label><input type="radio" name="degreeLevel" value="Bachelors">Bachelors</label>
+                    </div>
+                </div> <!-- Correctly closed div here -->
+                <div class="radio-group">
+                    <div class="radio-label">Attending Summer Terms:</div>
+                    <div class="radio-options">
+                        <label><input type="radio" id="summerYes" name="summerTerm" value="yes" checked>Yes</label>
+                        <label><input type="radio" id="summerNo" name="summerTerm" value="no">No</label>
+                    </div>
+                </div>
+                <div class="radio-group">
+                    <div class="radio-label">Status:</div>
+                    <div class="radio-options">
+                        <label><input type="radio" id="partTime" name="status" value="partTime">Part-Time</label>
+                        <label><input type="radio" id="fullTime" name="status" value="fullTime" checked>Full-Time</label>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <div id="result"></div>
+            <br>
+
+            <button type="button" onclick="estimateGraduationDate()">Estimate Final Term</button>
+        </form>
+    </div>
+    <footer>
+        An unofficial project by Luis E. Barba-Martin
+        <br>
+        Last Updated: 04/25/2024
+    </footer>
+    <script src="script.js"></script>
+
+<!--04/05/24 uploaded to codepen-->
+<!--04/25/24 fixed SLU logo, was previous pointed to file location, now points to url-->

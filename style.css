@@ -1,0 +1,106 @@
+/* base styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2.page-title {
+    color: #00563F; /* SLU green */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* form elements */
+form#graduationEstimatorForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label.var-title {
+    font-weight: bold;
+    color: #00563F; /* SLU green */
+    margin-top: 10px;
+}
+
+input[type="number"], select {
+    padding: 8px;
+    border: 2px solid #DAA520; /* gold */
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #00563F; /* SLU green */
+}
+
+.radio-group-container {
+    margin-top: 20px;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+.radio-label {
+    font-weight: bold;
+    color: #00563F; /* SLU green */
+}
+
+.radio-options label {
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    accent-color: #DAA520; /* gold */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00563F; /* SLU green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #DAA520; /* gold */
+    color: #00563F; /* SLU green */
+}
+
+/* result display */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #DAA520; /* gold */
+    color: #00563F; /* SLU green */
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: small;
+}
